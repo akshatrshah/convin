@@ -26,10 +26,10 @@ with open(file_name+".txt", "r") as f:
             for j in question_tags:
                 #when a question statement is found adding it to the result file with a YES.
                 if j in i:
-                    temp=i+" "*(70-len(i))+"Yes"
-                    k.write(f'{temp}\n')
+                    ques=i+" "*(70-len(i))+"Yes"
+                    k.write(f'{ques}\n')
                     break
             #when a question statement is not found and adding it to the result file with a NO.
             else:
-                temp1=i+" "*(70-len(i))+"No"
-                k.write(f'{temp1}\n')
+                nt_ques=i+" "*(70-len(i))+"No"
+                k.write(f'{nt_ques}\n')
